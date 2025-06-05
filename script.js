@@ -7,7 +7,7 @@ function calcularDV() {
   const resultadoDiv = document.getElementById("resultado");
 
   if (!/^[A-Z0-9]{12}$/.test(input)) {
-    resultadoDiv.textContent = "Entrada inválida. Use 12 caracteres alfanuméricos.";
+    resultadoDiv.textContent = "Invalid Input. Use 12 characters alphanumeric.";
     resultadoDiv.style.color = "red";
     return;
   }
@@ -25,6 +25,6 @@ function calcularDV() {
   let resto2 = soma2 % 11;
   let dv2 = resto2 < 2 ? 0 : 11 - resto2;
 
-  resultadoDiv.textContent = `CNPJ com DV: ${input}-${dv1}${dv2}`;
+  resultadoDiv.textContent = `Tax ID (CNPJ) with DV: ${input}-${dv1}${dv2}`;
   resultadoDiv.style.color = "green";
 }
