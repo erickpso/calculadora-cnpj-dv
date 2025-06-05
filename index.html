@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de DV – CNPJ Alfanumérico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Dígito Verificador</h1>
+    <p>Insira um CNPJ alfanumérico com 12 caracteres:</p>
+    <input type="text" id="inputCNPJ" maxlength="12" placeholder="Ex: 12ABC34501DE">
+    <button onclick="calcularDV()">Calcular DV</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
